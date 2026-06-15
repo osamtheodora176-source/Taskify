@@ -192,7 +192,6 @@ export default function Auth({ onLogin }) {
                 setUsername('');
                 setPassword('');
                 setConfirmPassword('');
-                setError('');
               }}
               style={{ background: 'none', border: 'none', color: '#fff', cursor: 'pointer', fontWeight: '600' }}
             >
