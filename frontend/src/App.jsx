@@ -7,8 +7,9 @@ import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import Auth from './Auth';
 import './index.css';
 
-const API_URL = 'http://localhost:5000/api/todos';
-const PROFILE_URL = 'http://localhost:5000/api/auth/profile';
+const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = `${BASE_URL}/api/todos`;
+const PROFILE_URL = `${BASE_URL}/api/auth/profile`;
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('dora_token'));
